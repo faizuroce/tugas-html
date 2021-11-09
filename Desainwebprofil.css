@@ -1,0 +1,70 @@
+.kepala {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.profil {
+    margin-left: 20px;
+}
+
+.kategori {
+    padding-left: 500px;
+    text-align: right;
+}
+
+.isi{
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 100px;
+}
+
+.bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  bottom-content aside{
+    width: 20%;
+    height: 20%;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20%;
+    border: 3px;
+    margin-left: 20px;
+  }
+  
+  .col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .col img {
+    width: 100%;
+  }
+  
+  .bottom-field {
+    padding: 0px 5px;
+    padding-bottom: 10px;
+    margin-left:20px;
+  }
+  
+  .bottom-field ul {
+    list-style: none;
+  }
+  
+  .bottom-field ul li {
+    display: flex;
+    align-items: center;
+    margin-right: 0.5em;
+  }
+  
+  .bottom-field i {
+    color: #3B4252;
+  }

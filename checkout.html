@@ -1,295 +1,116 @@
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <!-- meta tag -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
-
-    <!-- internal css -->
-    <style>
-        * {
-            box-sizing: border-box;
-            font-family: 'Poppins', 'Tahoma';
-        }
-
-        body {
-            margin: 0px auto;
-        }
-
-        li a:hover:not(.active) {
-            color: #212121
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-        .col-6 {
-            width: 50%;
-            float: left;
-            padding: 40px;
-        }
-
-        .card {
-            padding: 20px;
-            background-color: lightgrey;
-            box-shadow: 5px 7px #b9b6b6;
-        }
-
-        .text-card {
-            padding: 0;
-        }
-
-        .text-card .text-left {
-            float: left
-        }
-
-        .text-card .text-right {
-            float: right;
-        }
-
-        .input-voucher {
-            width: 89%;
-            padding: 10px;
-            margin: 8px 0;
-            box-sizing: border-box;
-        }
-
-        .btn-voucher {
-            padding: 10px;
-            width: 10%;
-            background-color: white;
-            color: black;
-        }
-
-        footer {
-            position: bottom; bottom:50px; left:10px;
-            left: 0;
-            bottom: 10px;
-            width: 100%;
-            padding: 20px;
-            background-color: lightgrey;
-            font-size: 18px;
-        }
-
-        .method-payment {
-            padding: 5px;
-        }
-
-        .method-payment i {
-            margin-right: 10px;
-        }
-
-        .input-email {
-            width: 75%;
-            padding: 10px;
-            margin: 8px 0;
-            box-sizing: border-box;
-        }
-
-        .btn-subscribe {
-            padding: 10px;
-            margin-left: -10px;
-            background-color: red;
-            color: white;
-        }
-    </style>
-
-    <!---- use font awesome --->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-</head>
-
-<body style="min-height: 100vh;">
-    <!-- navbar -->
-    <nav style="background-color: #DDDDDD; margin-top: -20px;margin-bottom: -40px;">
-        <h1 style="padding: 10px; float: left;">
-            <a style="font-size: 20px;" href="#"> <i class="fas fa-store fa-lg"></i> &nbsp;FH.STORE </a>
-        </h1>
-        <ul style="list-style-type: none; margin: 0; padding: 22px; overflow: hidden;">
-            <li style="border-right: 1px solid; float: left; padding: 15px;">
-                <a style="font-size: 20px;" href="#"><u> Category 1 </u></a>
-            </li>
-            <li style="border-right: 1px solid; float: left; padding: 15px;">
-                <a style="font-size: 20px;" href="#"><u> Category 2 </u></a>
-            </li>
-            <li style="float: left; padding: 15px;">
-                <a style="font-size: 20px;" href="#"><u> Category 3 </u></a>
-            </li>
-            <li style="float: right; padding: 15px; margin-left: -5px;">
-                <a style="font-size: 20px;" href="#"> <i class="fas fa-shopping-cart"></i> Cart (1) </a>
-            </li>
-            <li style="float: right; padding: 15px; margin-left: -5px;">
-                <a style="font-size: 20px;" href="#"> <i class="fas fa-search"></i> </a>
-            </li>
-        </ul>
-    </nav>
-    <!-- end of navbar -->
-    <div style="clear: both;"></div>
-    <!-- table cart -->
-    <section class="col-6">
-        <article>
-            <header>
-                <i class="far fa-check-circle fa-6x" style="float: left; vertical-align: middle;"></i>
-                <div style="float: left; padding: 5px; margin-left: 10px;">
-                    <p> Order 0110221184 </p>
-                    <p style="margin-top: -5px;">
-                        <span style="font-weight: 700; font-size: 22px;">Thank you, Faizurrahman!
-                    </p>
-                </div>
-            </header>
-            <div style="clear: both;"></div>
-
-            <hr>
-
-            <p>
-                Your order is confirmed.
-            </p>
-
-            <p>
-                We've accepted your order and we're getting it ready.
-            </p>
-
-            <hr>
-
-            <h2>Customer Information</h2>
-
-<div style="float: left;">            
-    <table style="float: left" border="0">
-        <tr>
-            <td style="color: #1D2238;"><strong>Shipping Address</strong>
-            <br>Faizurrahman Alhakim<br><a style="color:blue;" href="#">
-                Perumahan Qoryatussalam Sani Blok J1/RT 09, Depok, West Java Indonesia</a>
-            </td>
-            <td style="color: #1D2238;"><strong>Billing Address</strong>
-            <br>Faizurrahman Alhakim<br><a style="color:blue;" href="#">
-                Perumahan Qoryatussalam Sani Blok J1/RT 09, Depok, West Java Indonesia</a>
-            </td>
-        </tr>
-</table>
-<br>
+    <meta charset="utf-8">
+    <title>Checkout_0110221184_faizurrahman alhakim</title>
+    <link rel="stylesheet" href="Checkout.css">
+    <body>
+        <div class="navAtas">
+            <nav>
+                <ul>
+                    <div class="list">
+                        <li style="list-style-type: square;margin-right: 20px;margin-top: 13px;"><b>apparelshop</b></li>
+                        <li style="margin-right: 20px;border-right:solid 1px; padding :3px; height: 17px;margin-top: 10px;"><a href="Category1.html" target="_blank">Category 1</a></li>
+                        <li style="margin-right: 20px;border-right:solid 1px; padding :3px; height: 17px;margin-top: 10px;"><a href="Category2.html" target="_blank">Category 2</a></li>
+                        <li style="margin-right: 20px;border-right:solid 1px; padding :3px; height: 17px;margin-top: 10px;"><a href="Category3.html" target="_blank">Category 3</a></li>
+                        <li style="margin-left:auto ;margin-right: 10px;margin-top: 10px;"><img src="logo apparel.png" width="25" height="25"></li>
+                        <li style="margin-right: 10px;margin-bottom: 10px;margin-top: 10px;"><img src="logo.png" width="25" height="25"></li>
+                    </div>
+                </ul>  
+            </nav>
+        </div>
+<main>
 <table>
-        <tr>
-            <td style="color: #1D2238;"><strong>Shipping Methode</strong>
-            <br>Faizurrahman Alhakim<br>
-            Perumahan Qoryatussalam Sani Blok J1/RT 09, Depok.</td>
-            <td style="color: #1D2238;"><strong>Payment Methode</strong>
-            <br><i class="fab fa-cc-visa fa-lg"></i> Ending in 221199 - $300.00<br>
-            </td>
+    <thead>
+        <tr style="text-align: center;">
+            <th width="100px" style="border-bottom: 1px solid;">
+                <img src="data:image/png;base64,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" width="90px" height="75px">
+            </th>
+            <th width="200px" style="border-bottom: 1px solid;">
+                <p style="text-align: center;">Order 1312171312</p>
+                <p style="font-size: 20px;"><b>Thank You,Customer!</b></p>
+            </th>
+            <th width="750px"style="border-bottom: 1px solid;"></th>
+            <th colspan="2"><strong>Summary (1 Item)</strong></th>
         </tr>
-    </table>
-</div>
-
-            <div style="clear: left;"></div>
-
-            <hr>
-
-        </article>
-    </section>
-    <!-- end of table cart -->
-
-    <!-- bill -->
-    <section class="col-6">
-        <article class="card">
-            <header>
-                <h3>Summary (1 Item)</h3>
-            </header>
-            <div class="text-card">
-                <p class="text-left">
-                    Subtotal
-                </p>
-                <p class="text-right">
-                    $20.00
-                </p>
-
-                <div style="clear: both;"></div>
-            </div>
-
-            <div class="text-card">
-                <p class="text-left">
-                    Shipping
-                </p>
-                <p class="text-right">
-                    -
-                </p>
-
-                <div style="clear: both;"></div>
-            </div>
-
-            <div class="text-card">
-                <p class="text-left">
-                    Est. Taxes
-                </p>
-                <p class="text-right">
-                    -
-                </p>
-
-                <div style="clear: both;"></div>
-            </div>
-
-            <hr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="3" rowspan="3">
+                <p>Your order is confirmed.</p>
+                <p>We've accepted your order and we're getting it ready</p>
+            </td>
+            <td>Subtotal</td>
+            <td>$20.00</td>
+        </tr>
+        <tr>
+            <td>Shipping</td>
+            <td>$2.20</td>
+        </tr>
+        <tr style="border-bottom: 1px solid;">
+            <td>Est. Taxes</td>
+            <td>$1.40</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3"><h1><b>Customer Information</b></h1></td>
+            <td colspan="2">
             <h3>
                 Gift card or discount code
             </h3>
             <div style="margin-top: -20px;">
                 <input type="text" name="email" id="email" class="input-voucher">
                 <button class="btn-voucher">Apply</button>
-            </div>
-            <hr>
-
-            <div class="text-card">
-                <p class="text-left">
-                    Total
-                </p>
-                <p class="text-right">
-                    $20.00
-                </p>
-
-                <div style="clear: both;"></div>
-            </div>
-        </article>
-    </section>
-    <!-- end of bill -->
-    <div style="clear: both;"></div>
-    <!-- footer -->
+        </td>
+        <tr>
+            <th width="200px" colspan="2" style="text-align: left;"><h4>Shipping Address</h4></th>
+            <th width="200px" style="text-align: left;">Billing Address</th>
+            <td>Total</td>
+            <td>$23.60</td>
+        </tr>
+        <tr>
+            <td colspan="2">Faizurrahman alhakim</td>
+            <td>Faizurrahman alhakimtd>
+        </tr>
+        <tr>
+            <td colspan="2">Perumahan Qoryatussalam Sani,Sukmajaya,kota Depok,Jawa Barat</td>
+            <td>Perumahan Qoryatussalam Sani,Sukmajaya,kota Depok,Jawa Barat</td>
+        </tr>
+        <tr>
+            <th colspan="2" style="text-align: left;"><h4>Shipping Method</h4></th>
+            <th style="text-align: left;">Payment Method</th>
+        </tr>
+        <tr>
+            <td colspan="2">UPS Ground (Estimate ship time 3-6 days)</td>
+            <td>Ending in 3217 - $23.60</i></td>
+        </tr>
+    </tfoot>
+</table>
+</main>
+    </body>
     <footer>
-        <div style=" float:left;">
-            <h4 style="float: left;">
-                <a href="#">FH.STORE</a>
-            </h4>
-            <ul style="list-style-type: none; margin: 0; padding: 10px; overflow: hidden;">
-                <li style="border-right: 1px solid; float: left; padding: 15px;">
-                    <a href="#"><u> Category 1 </u></a>
-                </li>
-                <li style="border-right: 1px solid; float: left; padding: 15px;">
-                    <a href="#"><u> Category 2 </u></a>
-                </li>
-                <li style="float: left; padding: 15px;">
-                    <a href="#"><u> Category 3 </u></a>
-                </li>
-            </ul>
-            <div class="method-payment">
-                <i class="fab fa-cc-visa fa-2x"></i>
-                <i class="fab fa-cc-mastercard fa-2x"></i>
-                <i class="fab fa-cc-paypal fa-2x"></i>
-            </div>
-        </div>
-        <div style="float:right;">
-            <h4>
-                Stay in Touch! Join our Newsletter.
-            </h4>
-
-            <input type="text" name="email" id="email" placeholder="Enter Email" class="input-email">
-            <button class="btn-subscribe">Subscribe</button>
-        </div>
-
-
-        <div style="clear: both;"></div>
-    </footer>
-    <!-- end of footer -->
-</body>
-
+        <hr>
+        <tr>
+            <nav>
+                <ul>    
+                    <div class="navBawah">
+                        <li style="list-style-type: none;margin-right: 20px; margin-top: 13px;"><b>www.supreme.com</b></li>
+                        <li style="margin-right: 20px;border-right:solid 1px;padding :3px; height: 17px;margin-top: 10px;"><a href="CategoryX.html" target="_blank">Category X</a></li>
+                        <li style="margin-right: 20px;border-right:solid 1px;padding :3px; height: 17px;margin-top: 10px;"><a href="CategoryY.html" target="_blank">Category Y</a></li>
+                        <li style="margin-right: 20px;border-right:solid 1px;padding :3px; height: 17px;margin-top: 10px;"><a href="CategoryZ.html" target="_blank">Category Z</a></li>
+                        <li style="margin-left:auto ;margin-right: 10px;"></li>
+                        <li style="margin-right: 10px;margin-bottom: 20px;"></li>
+                        <li style="margin-left:auto; margin-right: 10px ;"></li>
+                        <h4>
+                        Stay in Touch! Join our Newsletter.
+                        </h4>
+                        <input type="text" name="email" id="email" placeholder="Enter Email" class="input-email">
+                        <button class="btn-subscribe">Subscribe</button></li>
+                    </div>
+                </ul>
+            </nav>
+        </tr>
+      </footer>
+</head>
 </html>

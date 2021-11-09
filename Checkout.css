@@ -1,0 +1,27 @@
+.navAtas {
+    background-color: greenyellow;
+    padding: 10px;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+}
+
+main {
+    margin-bottom: 150px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tbody {
+    border-bottom: 1px solid;
+}
+
+.navBawah {
+    display: flex;
+    list-style: none;
+    padding: 17px;
+}
