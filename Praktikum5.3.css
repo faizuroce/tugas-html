@@ -1,0 +1,53 @@
+.container1 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+header {
+    background-color: yellow;
+    width: 25%;
+    height: 100px;
+    border: 2px solid;
+}
+
+.container2 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.nav1 {
+    background-color: orangered;
+    width: 75%;
+    height: 100px;
+    border: 2px solid;
+}
+
+.nav2 {
+    background-color: yellowgreen;
+    width: 25%;
+    height: 500px;
+    border: 2px solid;
+}
+
+main {
+    background-color: slateblue;
+    width: 50%;
+    height: 500px;
+    border: 2px solid;
+}
+
+aside {
+    background-color: turquoise ;
+    width: 25%;
+    height: 500px;
+    border: 2px solid;
+}
+
+footer {
+    background-color: blue;
+    width: 100%;
+    height: 100px;
+    border: 2px solid;
+}

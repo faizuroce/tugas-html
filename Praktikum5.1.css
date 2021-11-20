@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    gap: 50px;
+}
+
+.box1 {
+    width: 25%;
+    height: 630px;
+    background: yellow;
+    border : 2px solid;
+}
+
+.box2 {
+    border: 2px solid;
+    background-color: orangered;
+    width: 25%;
+    height: 630px;
+}
+
+.box3 {
+    width: 25%;
+    height: 630px;
+    background-color: yellowgreen;
+    border: 2px solid;
+}
+
+.box4 {
+    width: 25%;
+    height: 630px;
+    background-color: turquoise;
+    border: 2px solid;
+}
